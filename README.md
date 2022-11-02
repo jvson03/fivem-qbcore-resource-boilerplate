@@ -1,0 +1,1 @@
+# qbcore-resource-boilerplate
