@@ -4,18 +4,22 @@ game 'gta5'
 
 lua54 'yes'
 
-author 'author'
-description 'description'
-version '0.0.1'
+author 'John Doe <j.doe@example.com>'
+description 'Example resource'
+version '1.0.0'
+
+shared_script 'config/config.lua'
 
 client_scripts {
-    'config/config.lua',
     'client/main.lua'
 }
 
 server_scripts {
-    'config/config.lua',
     'server/main.lua'
+}
+
+escrow_ignore {
+    'config/config.lua' -- Ignore the config file from being encrypted
 }
 
 dependencies {
